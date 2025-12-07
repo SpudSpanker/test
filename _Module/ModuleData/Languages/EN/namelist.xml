@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<base>
+  <tags>
+    <tag language="English"/>
+  </tags>
+  <strings>
+    <string id="7a3804Bc" text="{FIRSTNAME} the Blade" />
+    <string id="16452362" text="{FIRSTNAME} the {?IS_FEMALE}Swordmaiden{?}Swordman{\?}" />
+    <string id="9b0e91cA" text="{FIRSTNAME} the Brave" />
+    <string id="80703397" text="{FIRSTNAME} the Maruder" />
+    <string id="19530eFE" text="{FIRSTNAME} the Loyal" />
+    <string id="8aC3d7cd" text="{FIRSTNAME} the Strong" />
+    <string id="A50878c8" text="{FIRSTNAME} the Red" />
+    <string id="0cb624d5" text="{FIRSTNAME} the Butcher" />
+    <string id="F949d0eD" text="{FIRSTNAME} the Knife" />
+    <string id="F9781Fa5" text="{FIRSTNAME} the Shark" />
+    <string id="e446af77" text="{FIRSTNAME} the Scythe" />
+    <string id="ee1e910A" text="{FIRSTNAME} the Anvil" />
+    <string id="1957a93D" text="{FIRSTNAME} the scarlet" />
+    <string id="8aAa6258" text="{FIRSTNAME} the Woodcutter's {?IS_FEMALE}daughter{?}son{\?}" />
+    <string id="7b602df4" text="{FIRSTNAME} the Charcoal-burner's {?IS_FEMALE}daughter{?}son{\?}" />
+    <string id="8939AE9F" text="{FIRSTNAME} the Firstblade" />
+    <string id="a860114d" text="{FIRSTNAME} the Gorger" />
+    <string id="851056d0" text="{FIRSTNAME} the Iron" />
+    <string id="0f1D6083" text="{FIRSTNAME} the Barehand" />
+    <string id="3f99fAf4" text="{FIRSTNAME} the Barefoot" />
+    <string id="320e8AC3" text="{FIRSTNAME} the Bigfoot" />
+    <string id="c0C37f23" text="{FIRSTNAME} the Brawler" />
+    <string id="58E25b2c" text="{FIRSTNAME} the Centipede" />
+    <string id="Dd77D7fe" text="{FIRSTNAME} the {?IS_FEMALE}Mare{?}Steed{\?}" />
+    <string id="285C9720" text="{FIRSTNAME} the Plower" />
+    <string id="403BB249" text="{FIRSTNAME} the Shield-crasher" />
+    <string id="4878254d" text="{FIRSTNAME} the Levyman" />
+    <string id="a26BBbfE" text="{FIRSTNAME} the Crooked Nose" />
+    <string id="e49b3Fe7" text="{FIRSTNAME} the Rider" />
+    <string id="Bd616959" text="{FIRSTNAME} the {?IS_FEMALE}Horselady{?}Horseman{\?}" />
+    <string id="f619044D" text="{FIRSTNAME} the Bold" />
+    <string id="B1832939" text="{FIRSTNAME} the Vanguard" />
+    <string id="0bEE50da" text="{FIRSTNAME} the Centaur" />
+    <string id="73a1d677" text="{FIRSTNAME} the Stallion" />
+    <string id="9874382b" text="{FIRSTNAME} the Gallant" />
+    <string id="3d133b8B" text="{FIRSTNAME} the Hammer" />
+    <string id="242b2BaA" text="{FIRSTNAME} the Swift" />
+    <string id="8701bbe2" text="{FIRSTNAME} the Pinder" />
+    <string id="7c42d315" text="{FIRSTNAME} the Haste" />
+    <string id="14053851" text="{FIRSTNAME} the Harbinger" />
+    <string id="351607C1" text="{FIRSTNAME} the Lazy" />
+    <string id="6FbA2aE9" text="{FIRSTNAME} the Four-legged" />
+    <string id="dc845e39" text="{FIRSTNAME} the Groom" />
+    <string id="0bc321ac" text="{FIRSTNAME} the Cavarlyman" />
+    <string id="F1104B5a" text="{FIRSTNAME} the Squire" />
+    <string id="9f3b1B25" text="{FIRSTNAME} the Golden Bridle" />
+    <string id="37423dcD" text="{FIRSTNAME} the Ranger" />
+    <string id="9e5C609A" text="{FIRSTNAME} the Bowman" />
+    <string id="eaD76Cf2" text="{FIRSTNAME} the Sharpshooter" />
+    <string id="685eE327" text="{FIRSTNAME} the Sniper" />
+    <string id="C78c0302" text="{FIRSTNAME} the {?IS_FEMALE}Huntress{?}Hunter{\?}" />
+    <string id="deF02B69" text="{FIRSTNAME} the Merry" />
+    <string id="B72a05dC" text="{FIRSTNAME} the Scarlet" />
+    <string id="c6DA8Da2" text="{FIRSTNAME} the Miller's {?IS_FEMALE}daughter{?}son{\?}" />
+    <string id="91C52417" text="{FIRSTNAME}-a-Dale" />
+    <string id="2692143D" text="{FIRSTNAME} Greenleaf" />
+    <string id="8566Dfa5" text="{FIRSTNAME} of Doncaster" />
+    <string id="707C8eD8" text="{FIRSTNAME} the Blind" />
+    <string id="a69b2FbB" text="{FIRSTNAME} the Arch" />
+    <string id="669eA1E2" text="{FIRSTNAME} the Stray" />
+    <string id="ba8667da" text="{FIRSTNAME} the Arrowhead" />
+    <string id="Ff2b5b00" text="{FIRSTNAME} the Hermit" />
+    <string id="A11ef5c8" text="{FIRSTNAME} the Far-Seeker" />
+    <string id="DdCCd87F" text="{FIRSTNAME} the Huntsman" />
+    <string id="2Fd2556D" text="{FIRSTNAME} the Power-drawer" />
+    <string id="9a416ecf" text="{FIRSTNAME} the Cave" />
+    <string id="3Bd9e080" text="{FIRSTNAME} the Index Finger" />
+    <string id="e4229b66" text="{FIRSTNAME} the Arrow Barrel" />
+    <string id="A93e60aD" text="{FIRSTNAME} an Fhàsach" />
+    <string id="E126Bd72" text="{FIRSTNAME} an Làidir" />
+    <string id="8bD3e872" text="{FIRSTNAME} an Gaisgeach" />
+    <string id="51493733" text="{FIRSTNAME} o Uchalion" />
+    <string id="18Db0e27" text="{FIRSTNAME} o Lyn Tywal" />
+    <string id="b0046b16" text="{FIRSTNAME} o Lyn Modris" />
+    <string id="9e3b35dD" text="{FIRSTNAME} o Ailta Druin" />
+    <string id="c428E81E" text="{FIRSTNAME} o Benddric" />
+    <string id="DSR78aCaa02" text="{FIRSTNAME} Lwyd" />
+    <string id="DSRc0E07140" text="{FIRSTNAME} Fawr" />
+    <string id="DSR3f1F3207" text="{FIRSTNAME} y Battanaid" />
+    <string id="70a204b5" text="{FIRSTNAME} Vulpis" />
+    <string id="B9DFa49E" text="{FIRSTNAME} Fortis" />
+    <string id="4A98Ab35" text="{FIRSTNAME} an Callidus" />
+    <string id="Bf326787" text="{FIRSTNAME} {?IF_FEMALE}Athanate{?}Athanatos{\?}" />
+    <string id="25445eC4" text="{FIRSTNAME} {?IF_FEMALE}Pankratissa{?}Pankratios{\?}" />
+    <string id="a07A65f9" text="{FIRSTNAME} the Silver Shield" />
+    <string id="Ab3d8Ea5" text="{FIRSTNAME} the Bronze Shield" />
+    <string id="Ab6AB970" text="{FIRSTNAME} the {?IF_FEMALE}Spathare{?}Spatharios{\?}" />
+    <string id="36cd93E0" text="{FIRSTNAME} the Kontarion" />
+    <string id="1eD346CC" text="{FIRSTNAME} Myzeadas" />
+    <string id="2fBF2798" text="{FIRSTNAME} Cursiontos" />
+    <string id="61F4Eb94" text="{FIRSTNAME} Calseas" />
+    <string id="501785b9" text="{FIRSTNAME} Mirontos" />
+    <string id="Cb3bE7d5" text="{FIRSTNAME} Tiagysas" />
+    <string id="DdC0627d" text="{FIRSTNAME} {?IS_FEMALE}Ornianica{?}Ornianicus{\?}" />
+    <string id="831d35eD" text="{FIRSTNAME} Erithrysas" />
+    <string id="7b1cA944" text="{FIRSTNAME} Lycareas" />
+    <string id="1F692340" text="{FIRSTNAME} Sethys" />
+    <string id="4969d28d" text="{FIRSTNAME} {?IS_FEMALE}Blandike{?}Blandikos{\?}" />
+    <string id="7f518e38" text="{FIRSTNAME} Battanion" />
+    <string id="2A63395C" text="{FIRSTNAME} Calradias" />
+    <string id="e0B3624e" text="{FIRSTNAME} det Kråke" />
+    <string id="f030A6f3" text="{FIRSTNAME} det Rev" />
+    <string id="3Fc0b82e" text="{FIRSTNAME} av Nord" />
+    <string id="e05C8Fd3" text="{FIRSTNAME} the Svärd" />
+    <string id="90025540" text="{FIRSTNAME} the Sköld" />
+    <string id="72219326" text="{FIRSTNAME} z Chertyga" />
+    <string id="A3C29ef9" text="{FIRSTNAME} z Kachara" />
+    <string id="faF406d4" text="{FIRSTNAME} z Byalii" />
+    <string id="b6A3224c" text="{FIRSTNAME} z Galchi" />
+    <string id="5A8f4f83" text="{FIRSTNAME} z Ircari" />
+    <string id="1c139bDA" text="{FIRSTNAME} {?IS_FEMALE}Grozna{?}Grozny{\?}" />
+    <string id="3eB9b07e" text="{FIRSTNAME} {?IS_FEMALE}Ovska{?}Ovskii{\?}" />
+    <string id="027B11ad" text="{FIRSTNAME} {?IS_FEMALE}Vastorvska{?}Vastrovskii{\?}" />
+    <string id="1277386F" text="{FIRSTNAME} {?IS_FEMALE}Shagokhodna{?}Shagokhodnii{\?}" />
+    <string id="0d200107" text="{FIRSTNAME} the Vaeling" />
+    <string id="Bd4Db926" text="{FIRSTNAME} the Snowplower" />
+    <string id="35c04036" text="{FIRSTNAME} Sturgianin" />
+    <string id="whcLyzQjHH" text="{FIRSTNAME} av Nord" />
+    <string id="DSR604806C5" text="{FIRSTNAME} the Ashtree" />
+    <string id="DSR01514F16" text="{FIRSTNAME} the Hornblower" />
+    <string id="DSRde7EFEd1" text="{FIRSTNAME} the AðalmækiR" />
+    <string id="DSRD7D23726" text="{FIRSTNAME} the Arbot" />
+    <string id="DSRBfFA6BeF" text="{FIRSTNAME} the Aurriði" />
+    <string id="DSR560b730f" text="{FIRSTNAME} the Aiþalataz" />
+    <string id="DSRde88f64A" text="{FIRSTNAME} the Berleggr" />
+    <string id="DSRC98f1729" text="{FIRSTNAME} the Breiðr" />
+    <string id="DSR4c0d6871" text="{FIRSTNAME} the Brun" />
+    <string id="DSRA7Af40dB" text="{FIRSTNAME} the Borkr" />
+    <string id="DSR94455642" text="{FIRSTNAME} the Eldr" />
+    <string id="DSR0e887c53" text="{FIRSTNAME} the Sverð" />
+    <string id="DSR2Fc3d897" text="{FIRSTNAME} the Skjoldr" />
+    <string id="DSR016c1db8" text="{FIRSTNAME} the Shieldmaster" />
+    <string id="DSR794b9822" text="{FIRSTNAME} under the Linden" />
+    <string id="DSRCf633197" text="{FIRSTNAME} the Grautr" />
+    <string id="DSR890b429D" text="{FIRSTNAME} the Gullskeggr" />
+    <string id="DSR20A3f862" text="{FIRSTNAME} the Hálmi" />
+    <string id="DSR724bb03c" text="{FIRSTNAME} the Jarpr" />
+    <string id="DSR46Db6045" text="{FIRSTNAME} of Alfarheim" />
+    <string id="DSRdc798A3C" text="{FIRSTNAME} the Grani Rider" />
+    <string id="DSR22B25047" text="{FIRSTNAME} the Tröll" />
+    <string id="6c6Ed6CB" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
+    <string id="DSR19590ed4" text="{FIRSTNAME} the Gráfeldr" />
+    <string id="DSR163dD4a3" text="{FIRSTNAME} the Bluetooth" />
+    <string id="DSR3904b038" text="{FIRSTNAME} the Forkbeard" />
+    <string id="DSR4B9f43FF" text="{FIRSTNAME} the Hunger" />
+    <string id="DSRB38d0415" text="{FIRSTNAME} the Whetstone" />
+    <string id="DSRec9f6816" text="{FIRSTNAME} av Nord" />
+    <string id="C38573ce" text="{FIRSTNAME} the Ashtree" />
+    <string id="3FF379a4" text="{FIRSTNAME} the Hornblower" />
+    <string id="D566B9f2" text="{FIRSTNAME} the AðalmækiR" />
+    <string id="ce5B29c0" text="{FIRSTNAME} the Arbot" />
+    <string id="4DE52c3A" text="{FIRSTNAME} the Aurriði" />
+    <string id="0ff16F20" text="{FIRSTNAME} the Aiþalataz" />
+    <string id="64356808" text="{FIRSTNAME} the Berleggr" />
+    <string id="6779Cc15" text="{FIRSTNAME} the Breiðr" />
+    <string id="973f32a9" text="{FIRSTNAME} the Brun" />
+    <string id="a6DE208A" text="{FIRSTNAME} the Borkr" />
+    <string id="1305a575" text="{FIRSTNAME} the Eldr" />
+    <string id="95D62Fef" text="{FIRSTNAME} the Sverð" />
+    <string id="bc1f6F24" text="{FIRSTNAME} the Skjoldr" />
+    <string id="B54378f8" text="{FIRSTNAME} the Shieldmaster" />
+    <string id="D9676e8d" text="{FIRSTNAME} under the Linden" />
+    <string id="Bf5DbC9C" text="{FIRSTNAME} the Grautr" />
+    <string id="6263b52b" text="{FIRSTNAME} the Gullskeggr" />
+    <string id="5EC91b07" text="{FIRSTNAME} the Hálmi" />
+    <string id="59F0C69e" text="{FIRSTNAME} the Jarpr" />
+    <string id="5249275b" text="{FIRSTNAME} of Alfarheim" />
+    <string id="3764af09" text="{FIRSTNAME} the Grani Rider" />
+    <string id="6f2599c7" text="{FIRSTNAME} the Tröll" />
+    <string id="bD8wrnSIl" text="{FIRSTNAME} the {?IS_FEMALE}Get{?}Geitebukk{\?}" />
+    <string id="07a3Ff06" text="{FIRSTNAME} the Gráfeldr" />
+    <string id="91EA333A" text="{FIRSTNAME} the Bluetooth" />
+    <string id="8781fdd9" text="{FIRSTNAME} the Forkbeard" />
+    <string id="8e973D28" text="{FIRSTNAME} the Hunger" />
+    <string id="2A58134b" text="{FIRSTNAME} the Whetstone" />
+    <string id="E99f0E79" text="{FIRSTNAME} the Nordling" />
+    <string id="XR30w6GwFc" text="{FIRSTNAME} the vakken" />
+    <string id="87D0c39d" text="{FIRSTNAME} the Forest" />
+    <string id="8816290a" text="{FIRSTNAME} the Forestrunner" />
+    <string id="2AdEd0D3" text="{FIRSTNAME} the Ircarian" />
+    <string id="baB9AFcE" text="{FIRSTNAME} the Unlanded" />
+    <string id="451d59C4" text="{FIRSTNAME} the Vakken" />
+    <string id="ae5Ee53E" text="{FIRSTNAME} the Lion" />
+    <string id="989f99c1" text="{FIRSTNAME} the Little" />
+    <string id="e04Ab9b0" text="{FIRSTNAME} the Eborian" />
+    <string id="5EaAe229" text="{FIRSTNAME} of the Upper Trand" />
+    <string id="BbA980d7" text="{FIRSTNAME} of the Lower Trand" />
+    <string id="65997339" text="{FIRSTNAME} of Ochs Pool" />
+    <string id="938ba6e3" text="{FIRSTNAME} of Minor Sargot" />
+    <string id="41FE05CE" text="{FIRSTNAME} of the Lower Sargot" />
+    <string id="9c13eB1b" text="{FIRSTNAME} of the Upper Sargot" />
+    <string id="c49a6650" text="{FIRSTNAME} the so-called Overlord" />
+    <string id="ca1ad0f0" text="{FIRSTNAME} the Freeholder" />
+    <string id="ceA828aF" text="{FIRSTNAME} the Vlandian" />
+    <string id="faC8efcC" text="{FIRSTNAME} Ukhaantai" />
+    <string id="566286e1" text="{FIRSTNAME} Khurdan" />
+    <string id="A518b416" text="{FIRSTNAME} Yamaa" />
+    <string id="AdC9b194" text="Devsegiin {FIRSTNAME}" />
+    <string id="5d532ce9" text="Akkanin {FIRSTNAME}" />
+    <string id="05B7Ed2A" text="Kökkaratin {FIRSTNAME}" />
+    <string id="2264f587" text="Sulundagiin {FIRSTNAME}" />
+    <string id="0e24e754" text="Tanaziin {FIRSTNAME}" />
+    <string id="D3E3Df82" text="Karakaziin {FIRSTNAME}" />
+    <string id="aa2580aa" text="Zakhanii {FIRSTNAME}" />
+    <string id="78Dc10AB" text="Ozugiin {FIRSTNAME}" />
+    <string id="d6CC31eA" text="Kohi Rohinin {FIRSTNAME}" />
+    <string id="5186a8a0" text="Teyagiin {FIRSTNAME}" />
+    <string id="C1B24Eaf" text="Moriin {FIRSTNAME}" />
+    <string id="50a9d14a" text="Bökhiin {FIRSTNAME}" />
+    <string id="85189195" text="Saaral choniin {FIRSTNAME}" />
+    <string id="d64A9530" text="{FIRSTNAME} the Saddleborn" />
+    <string id="298f810E" text="Khuzaitiin {FIRSTNAME}" />
+    <string id="IaTwqbjk8W" text="{FIRSTNAME} al janubi" />
+    <string id="09DF31e8" text="{FIRSTNAME} al sayf" />
+    <string id="c66255e7" text="{FIRSTNAME} al sharasa" />
+    <string id="F327E0a0" text="{FIRSTNAME} Nahr al-Kalsyin" />
+    <string id="0b59a165" text="{FIRSTNAME} Bahr al-Yeshmyin " />
+    <string id="B78ad814" text="{FIRSTNAME} Jabal Ashabiyin" />
+    <string id="3e1751C6" text="{FIRSTNAME} Jarjarayin" />
+    <string id="2488b090" text="{FIRSTNAME} of Jabal Tamaryin" />
+    <string id="1dD3368A" text="{FIRSTNAME} the Jamal" />
+    <string id="1c454A7A" text="{FIRSTNAME} the Simoon" />
+    <string id="bcF4E073" text="{FIRSTNAME} the Fig Torte" />
+    <string id="Dd7FC999" text="{FIRSTNAME} the Jinete" />
+    <string id="1C7f78DE" text="{FIRSTNAME} ibn Asera" />
+    <string id="a4903Ebd" text="{FIRSTNAME} the Mesopotamian" />
+    <string id="8133ED37" text="{FIRSTNAME} of Tyagis" />
+    <string id="46Ca6191" text="{FIRSTNAME} the Ghulam" />
+    <string id="BbEA033B" text="{FIRSTNAME} the Koshti" />
+    <string id="Cf840c6f" text="{FIRSTNAME} the Melon Lover" />
+    <string id="beC76c41" text="{FIRSTNAME} the Black Sheep" />
+    <string id="Ab0cdd2A" text="{FIRSTNAME} the White Sheep" />
+    <string id="aE42183" text="{FIRSTNAME} the Darshi" />
+    <string id="6DE7785F" text="{FIRSTNAME} the White Horse" />
+    <string id="DSR1824a4c9" text="{FIRSTNAME} the Ashtree" />
+    <string id="DSR9c31C16f" text="{FIRSTNAME} the Hornblower" />
+    <string id="508eb01A" text="{FIRSTNAME} of Himinbjörg" />
+    <string id="E50dd5cA" text="{FIRSTNAME} the Bifröst" />
+    <string id="DSRA5888013" text="{FIRSTNAME} the Grani Rider" />
+    <string id="a8DA899E" text="{FIRSTNAME} the Rune" />
+    <string id="530aeeCe" text="{FIRSTNAME} of Nine Mothers" />
+    <string id="DSRA72d8bfD" text="{FIRSTNAME} the Sverð" />
+    <string id="DSR430b03Ef" text="{FIRSTNAME} the Skjoldr" />
+    <string id="6BDeF89A" text="{FIRSTNAME} of Valheim" />
+    <string id="65Cae0Cb" text="{FIRSTNAME} the {?IS_FEMALE}Valkyrja{?}Einherjar{\?}" />
+    <string id="D70dd98B" text="{FIRSTNAME} the Doutanuki" />
+    <string id="E975E857" text="{FIRSTNAME} the Lone Wolf" />
+    <string id="d80110a3" text="{FIRSTNAME} the Kougi" />
+    <string id="fa11a579" text="{FIRSTNAME} the One-eyed Dragon" />
+    <string id="0ff7B910" text="{FIRSTNAME} the Four-fourlong-chanting-dumpling-piercer" />
+    <string id="81737Da9" text="{FIRSTNAME} the Ura" />
+    <string id="b03f1793" text="{FIRSTNAME} the Hayato" />
+    <string id="82C7cfa4" text="{FIRSTNAME} the Miyatsuko" />
+    <string id="64bDF091" text="{FIRSTNAME} the Obito" />
+    <string id="c45D5B6E" text="{FIRSTNAME} the Fuhito" />
+    <string id="95315Ee4" text="{FIRSTNAME} the Suguri" />
+    <string id="24A11e02" text="{FIRSTNAME} the Emishi" />
+    <string id="9bC717bd" text="{FIRSTNAME} the Atai" />
+    <string id="f2030e5b" text="{FIRSTNAME} the Shield-sewer" />
+    <string id="6b545f61" text="{FIRSTNAME} the Fletcher" />
+    <string id="9f64Ddb4" text="{FIRSTNAME} the Saddler" />
+    <string id="4Eb1Cc0a" text="{FIRSTNAME} of Mizunoe" />
+    <string id="a698c01D" text="{FIRSTNAME} the Templeborn" />
+    <string id="8fF9B02C" text="{FIRSTNAME} the Ronin" />
+    <string id="DSR8e6D385E" text="{FIRSTNAME} of Tulga" />
+    <string id="DSR3FEbfF8D" text="{FIRSTNAME} of Narra" />
+    <string id="0ae31E89" text="{FIRSTNAME} of Ichamur" />
+    <string id="1c1c8104" text="{FIRSTNAME} of Ada Kulun" />
+    <string id="2309dF4e" text="{FIRSTNAME} of Dirigh Aban" />
+    <string id="6ED1C751" text="{FIRSTNAME} the Khergit" />
+    <string id="75313adf" text="{FIRSTNAME} the ex-Imperial-guard" />
+    <string id="253D01F5" text="{FIRSTNAME} z Reyvadina" />
+    <string id="c4054ec8" text="{FIRSTNAME} z Curawa" />
+    <string id="5537F9d5" text="{FIRSTNAME} z Khudana" />
+    <string id="c0A24bc0" text="{FIRSTNAME} z Yrumy" />
+    <string id="317E5D93" text="{FIRSTNAME} z Radoghira" />
+    <string id="e2158238" text="{FIRSTNAME} the Vagir" />
+    <string id="DSRA741c1e4" text="{FIRSTNAME} Lakonion" />
+    <string id="8a084583" text="{FIRSTNAME} {?IS_FEMALE}Ragetia{?}Ragetius{\?}" />
+    <string id="DSR01AfF451" text="{FIRSTNAME} of Rotash" />
+    <string id="Ff2fBfe4" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}" />
+    <string id="903dC120" text="{FIRSTNAME} Lakonion" />
+    <string id="31A2a011" text="{FIRSTNAME} of Rotash" />
+    <string id="M7Y3DaIJI" text="{FIRSTNAME} {?IS_FEMALE}Plaica{?}Palaicus{\?}" />
+    <string id="12e734E1" text="{FIRSTNAME} the Balionling" />
+    <string id="d0E19592" text="{FIRSTNAME} the Biscanian" />
+    <string id="F3D239f5" text="{FIRSTNAME} the Geroian" />
+    <string id="64bA0b40" text="{FIRSTNAME} the Dryatican" />
+    <string id="b68955aD" text="{FIRSTNAME} the Jarjarawi" />
+    <string id="4a2Ce7AB" text="{FIRSTNAME} the Lakonikos " />
+    <string id="11c24aB0" text="{FIRSTNAME} the Kannan" />
+    <string id="37416d6f" text="{FIRSTNAME} Massagetos" />
+    <string id="40D1583e" text="{FIRSTNAME} the Swadisch" />
+    <string id="f640f9f5" text="{FIRSTNAME} the Rhodok" />
+    <string id="ecBd8942" text="{FIRSTNAME} the Sarranian" />
+    <string id="2234f65d" text="{FIRSTNAME} the Siri" />
+    <string id="6016F1bC" text="{FIRSTNAME} the Huaxian" />
+    <string id="585607e1" text="{FIRSTNAME} the Ragged" />
+    <string id="2f0fa040" text="{FIRSTNAME} the Shiv" />
+    <string id="671a2a18" text="{FIRSTNAME} Slicer" />
+    <string id="b25A376B" text="{FIRSTNAME} the Plunderer" />
+    <string id="5a1b50A8" text="{FIRSTNAME} the Mad" />
+    <string id="Fb47208b" text="{FIRSTNAME} Racoon" />
+    <string id="7BD66bc9" text="{FIRSTNAME} the Overlord" />
+    <string id="f273F650" text="{FIRSTNAME} the Slayer" />
+    <string id="f0D7710d" text="{FIRSTNAME} the Boss" />
+    <string id="9eD7d8bb" text="{FIRSTNAME} of the Filth" />
+    <string id="Ad64C0ab" text="{FIRSTNAME} the Bonebreaker" />
+    <string id="5d448d9D" text="{FIRSTNAME} Skullsmasher" />
+    <string id="FbBe5213" text="{FIRSTNAME} the Enslaver" />
+    <string id="7f10D466" text="{FIRSTNAME} the Captain" />
+    <string id="8fA4C86b" text="{FIRSTNAME} the Smuggler" />
+    <string id="1B251494" text="{FIRSTNAME} the Thief" />
+    <string id="053d83Fa" text="{FIRSTNAME} Conman" />
+    <string id="86C81e9C" text="{FIRSTNAME} the Fence" />
+    <string id="65C53e0C" text="{FIRSTNAME} Sly" />
+    <string id="B333774b" text="{FIRSTNAME} the Contrabander" />
+    <string id="42bDD7AA" text="{FIRSTNAME} the Swindler" />
+    <string id="1b5f3803" text="{FIRSTNAME} the Pilferer" />
+    <string id="061BB601" text="{FIRSTNAME} the Mastermind" />
+    <string id="D54D3d4B" text="{FIRSTNAME} the Assassin" />
+    <string id="933b16d6" text="{FIRSTNAME} the Spy" />
+    <string id="8a5391fb" text="{FIRSTNAME} the Scoutmaster" />
+    <string id="9cA68f83" text="{FIRSTNAME} the Tracker" />
+    <string id="9c1723ad" text="{FIRSTNAME} the Pathfinder" />
+    <string id="bc5B77cA" text="{FIRSTNAME} the Hidden" />
+    <string id="88E396c7" text="{FIRSTNAME} the Bounty Hunter" />
+    <string id="b80375ab" text="{FIRSTNAME} Fox" />
+    <string id="4e523c6c" text="{FIRSTNAME} the Sailor" />
+    <string id="23866a83" text="{FIRSTNAME} of the Waves" />
+    <string id="fe6BA5f3" text="{FIRSTNAME} the Peg Leg" />
+    <string id="7ED7E320" text="{FIRSTNAME} Ale-Drinker" />
+    <string id="32E9c4af" text="{FIRSTNAME} the Privateer" />
+    <string id="745fA2D7" text="{FIRSTNAME} the Seafarer" />
+    <string id="2FFD8342" text="{FIRSTNAME} Blackbeard" />
+    <string id="23782F63" text="{FIRSTNAME} the Doc" />
+    <string id="A9A2Aee1" text="{FIRSTNAME} Bloodscalpel" />
+    <string id="4b31369f" text="{FIRSTNAME} Sawbones" />
+    <string id="6837C94A" text="{FIRSTNAME} the Chemist" />
+    <string id="5e40fe20" text="{FIRSTNAME} the Limbchopper" />
+    
+    <!-- #region added in v1.5.2 -->
+    <string id="278938e8" text="{FIRSTNAME} the Eigh-armed Nezha" /> <!-- 八臂哪吒 -->
+    <string id="fc0404b0" text="{FIRSTNAME} the Big Dipper" /> <!-- 北斗七星 -->
+    <string id="4c7553bA" text="{FIRSTNAME} the Polaris" /> <!-- 北辰 -->
+    <string id="Ff81aa9b" text="{FIRSTNAME} the Qilin Cub" /> <!-- 麒麟児 -->
+    <string id="fe86d7da" text="{FIRSTNAME} the Little Conqueror" /> <!-- 小覇王 -->
+    <string id="8aAbE203" text="{FIRSTNAME} the Cloud Dragon" /> <!-- 入雲龍 -->
+    <string id="32860aA0" text="{FIRSTNAME} the Long Graive" /> <!-- 大刀 -->
+    <string id="5556C8fB" text="{FIRSTNAME} the Panther-face" /> <!-- 豹子頭 -->
+    <string id="Bf59d9aB" text="{FIRSTNAME} the Lightning Fire" /> <!-- 霹靂火 -->
+    <string id="197e4C66" text="{FIRSTNAME} the Silver Spear" /> <!-- 銀槍手 -->
+    <string id="49F4Cd0E" text="{FIRSTNAME} the Little Whirlwind" /> <!-- 小旋風 -->
+    <string id="0473B37d" text="{FIRSTNAME} the Sky-beating Hawk" /> <!-- 撲天鵰 -->
+    <string id="7d354dbA" text="{FIRSTNAME} the Flower-tatoo Monk" /> <!-- 花和尚 -->
+    <string id="3B44a433" text="{FIRSTNAME} the Tiger Slayer" /> <!-- 打虎 -->
+    <string id="ca8f173C" text="{FIRSTNAME} the Nevus-faced Beast" /> <!-- 青面獣 -->
+    <string id="65471c91" text="{FIRSTNAME} the Nine-tatoo Dragon" /> <!-- 九紋竜 -->
+    <string id="70571d1E" text="{FIRSTNAME} the Black Whirlwind" /> <!-- 黒旋風 -->
+    <string id="96DAcDf5" text="{FIRSTNAME} the Black Bull" /> <!-- 黒牛  -->
+    <string id="563D5438" text="{FIRSTNAME} the River-shaking Dragon" /> <!-- 混江龍 -->
+    <string id="99C34e3a" text="{FIRSTNAME} the Twin-tailed Scorpion" /> <!-- 双尾蠍 -->
+    <string id="b6C98f7D" text="{FIRSTNAME} the Velvet-skined Tiger" /> <!-- 錦毛虎 -->
+    <string id="b0FF1306" text="{FIRSTNAME} the Connected Shoulders " /> <!-- 通背 -->
+    <string id="b6428500" text="{FIRSTNAME} the Sword Daemon " /> <!-- 操刀鬼 -->
+    <string id="e433AE8c" text="{FIRSTNAME} the Chaotic Lord" /> <!-- 混世魔王 -->
+    <string id="c6D91015" text="{FIRSTNAME} the Sleeping Dragon" /> <!-- 伏龍 -->
+    <string id="1ABcCD68" text="{FIRSTNAME} the Phoenix Chick" /> <!-- 鳳雛 -->
+    <string id="64441ee4" text="{FIRSTNAME} the Water Mirror" /> <!-- 水鏡 -->
+    <string id="1dc1ccbA" text="{FIRSTNAME} the Double-headed Snake" /> <!-- 率然 -->
+    <!-- #endregion -->
+    <!-- #region Shokuho -->
+    <string id="SajF3CJNn" text="{FIRSTNAME} the One-eyed Dragon" />
+    <string id="yL7QtEAl0" text="{FIRSTNAME} the Yasha Daemon" />
+    <string id="LDBoMpSx0" text="{FIRSTNAME} the Bandit Daimyō" />
+    <string id="f90hyZNws" text="{FIRSTNAME} the Kitsune Fox" />
+    <string id="wYedo9KvQ" text="{FIRSTNAME} the Begger Warlord" />
+    <string id="6JHXuAtg3" text="{FIRSTNAME} the Dark Executor" />
+    <string id="pU5ASdhxU" text="{FIRSTNAME} of Ushū" />
+    <string id="24taQ4jxu" text="{FIRSTNAME} of Ōshū" />
+    
+    <string id="NNU8caokR" text="{FIRSTNAME} the Bandō-Tarō" />
+    <string id="SUg5JkdA2" text="{FIRSTNAME} the Chamberlain Lancer" />
+    <string id="02fNdlaIX" text="{FIRSTNAME} the Crimson Samurai" />
+    <string id="G2K51zlWx" text="{FIRSTNAME} the Second Lu bu" /> <!-- Lu Bu, ancient Chinese warlord -->
+    <string id="BLV4JPQyr" text="{FIRSTNAME} the Chief-Enforcer" />
+    <string id="6xksCvwZJ" text="{FIRSTNAME} the Build Master" />
+    <string id="kWleQs9rF" text="{FIRSTNAME} the Old Tanuki" />
+    <string id="HgZB9Qrg6" text="{FIRSTNAME} the Kamakura-Aku-Genta" /> <!-- Aku Genta, savage warrior -->
+    <string id="ulY2mBtYI" text="{FIRSTNAME} the Rappa Ninja" /> <!-- rappa = a slang for a saboteur or a ninja -->
+    <string id="KH8260mX3" text="{FIRSTNAME} the {?IF_FEMALE}Ni-Shōgun{?}Kubō{\?}" /> <!-- Ni = a nun, Kubō = vice Shogun -->
+    <string id="mqxa4Js3r" text="{FIRSTNAME} of Bushū" />
+    <string id="pbKijHMPl" text="{FIRSTNAME} of Jōshū" />
+    <string id="dLCFeZNHt" text="{FIRSTNAME} of Sōshu" />
+    
+    <string id="yypMFtFCb" text="{FIRSTNAME} the Eleven-line-breacher" /> <!-- breaking 11 line formations at once -->
+    <string id="UAqXMFk2b" text="{FIRSTNAME} the Tarō Tachi" /> <!-- roughly 10 Kg large katana -->
+    <string id="q7pcIr8ky" text="{FIRSTNAME} the Dragon" />
+    <string id="UZhWhVl0p" text="{FIRSTNAME} the War-God" />
+    <string id="MeKycTp2S" text="{FIRSTNAME} the Principal of Echigo" />
+    <string id="1tk1vVsAL" text="{FIRSTNAME} the Jug Crusher" />
+    <string id="I3Zke7WjZ" text="{FIRSTNAME} the Little Tengu" />
+    <string id="HRsO9TtRT" text="{FIRSTNAME} the Best Servant of the World" />
+    <string id="0pSD7X3uK" text="{FIRSTNAME} the Nokizaru Ninja" /> <!-- nokizaru = a monkey under the roof, one of the slang for a ninja -->
+    <string id="PDYrwK9yN" text="{FIRSTNAME} of Echizen" />
+    <string id="9F3ZuDu5b" text="{FIRSTNAME} of Echigo" />
+    <string id="9YhlvIpxm" text="{FIRSTNAME} of Etchū" />
+    <string id="6lz5o74wi" text="{FIRSTNAME} of Kaga" />
+    <string id="jlJyjxP0e" text="{FIRSTNAME} of Noto" />
+    <string id="SYsPw8M0p" text="{FIRSTNAME} of Sado Isle" />
+    <string id="RMBTEKzyY" text="{FIRSTNAME} of Wakasa" />
+    <string id="RqTjf7heT" text="{FIRSTNAME} the Dara Idiot"/> <!-- a dialect word meaning an idiot, or a moron -->
+    
+    <string id="LBFLzcFmc" text="{FIRSTNAME} the Yari" />
+    <string id="g0hIdVSmV" text="{FIRSTNAME} the Owari Tiger" />
+    <string id="0QNUUpWKA" text="{FIRSTNAME} the Temma Demon" /> <!-- Duddhism demon, heavenly demon, Takajizai-Ten, demon lord of the sixth heaven of the universe of desire -->
+    <string id="upApjcxcf" text="{FIRSTNAME} the Fūunji" /> <!-- a talented young man in a turbulent times -->
+    <string id="Dfc2H3KxB" text="{FIRSTNAME} the Ō-utsuke Craziest" /> <!-- a craziest guy -->
+    <string id="isWReKSMt" text="{FIRSTNAME} the Greatest Yumitori in Kaidō" /> <!-- Kaidō = Tokai-do -->
+    <string id="NrsIO9s1u" text="{FIRSTNAME} the Orange-head" />
+    <string id="1aX920QYp" text="{FIRSTNAME} the Bald Rat" />
+    <string id="SJqkr1BxI" text="{FIRSTNAME} the Nōbi-Unrivaled" />
+    <string id="sVlpTDSE4" text="{FIRSTNAME} the Oni-Gemba" />
+    <string id="DOQnWkUO1" text="{FIRSTNAME} of Bishū" />
+    <string id="a5JkrLXOR" text="{FIRSTNAME} of Onshū" />
+    <string id="J1ym6aKKb" text="{FIRSTNAME} of Sanshū" />
+    <string id="JJFQjY4ye" text="{FIRSTNAME} of SunShū" />
+    <string id="zd0E7SaxQ" text="{FIRSTNAME} of Ishū" />
+    <string id="GijN9PuAd" text="{FIRSTNAME} of Sōshū" />
+    <string id="UiVekZgxy" text="{FIRSTNAME} of Kōshū" />
+    <string id="cbmc57ABC" text="{FIRSTNAME} the Cotton" />
+    <string id="efWJhJxQ3" text="{FIRSTNAME} the Unbiased" />
+    <string id="HAj8oCTdJ" text="{FIRSTNAME} the Rear Guard" />
+    
+    <string id="6bDCdbNyt" text="{FIRSTNAME} the Mamushi Viper" />
+    <string id="jAe7Daxzv" text="{FIRSTNAME} of Shinshū" />
+    <string id="eZIvqzcPG" text="{FIRSTNAME} of Hida" />
+    <string id="Pw7gexjkb" text="{FIRSTNAME} of Mino" />
+    <string id="e0bRHd9Bb" text="{FIRSTNAME} the Chungquy" /> <!-- Chinese guardian god of home -->
+    <string id="eLsPdRS1T" text="{FIRSTNAME} the Assault Danjō" /> <!-- seme danjō -->
+    <string id="eNKJh4Qhs" text="{FIRSTNAME} the Mōgyū Wild Bull" />
+    <string id="QxtqvRIhA" text="{FIRSTNAME} the Immortal" />
+    <string id="Pg1k2ghjm" text="{FIRSTNAME} the Stable Master" /> <!-- tenkyū, meaning administrator of horse stable  -->
+    <string id="o4VIVnKZs" text="{FIRSTNAME} the Younger Stable Master" />
+    <string id="KQStglYII" text="{FIRSTNAME} the Nyūdō" />
+    <string id="tKuJ2Gw7r" text="{FIRSTNAME} the Tawake Idiot"/>
+    
+    <string id="PLW22L1qx" text="{FIRSTNAME} the Heuge Funny" />
+    <string id="M12UHuKmY" text="{FIRSTNAME} the Hard-Headed" />
+    <string id="OXhgU0drh" text="{FIRSTNAME} the Second Kongming" /> <!-- analogue to ancient Chinese strategist -->
+    <string id="DVqF5PCNQ" text="{FIRSTNAME} the Second Zhang Liang" /> <!-- analogue to ancient Chinese tactician -->
+    <string id="AC7zdyYDW" text="{FIRSTNAME} the Kuro-Oni" /> <!-- black oni -->
+    <string id="zbt7OG06I" text="{FIRSTNAME} the Kengō Master" />
+    <string id="Hyqp8t1DG" text="{FIRSTNAME} the Sword Sage" />
+    <string id="6jPFFXzHB" text="{FIRSTNAME} the Kabuki-Mono" />
+    <string id="t4AJcmWk9" text="{FIRSTNAME} the Pirate Warlord" />
+    <string id="d17EDBMVr" text="{FIRSTNAME} the Slayer" />
+    <string id="lUhm4hRho" text="{FIRSTNAME} the Suppa Ninja" /> <!-- suppa = one of the slang indicates a spy or a ninja -->
+    <string id="1HbRWBUbm" text="{FIRSTNAME} the {?IF_FEMALE}Hime-Musha{?}Oni-Musha{\?}" /> <!-- Hime = girl, princess -->
+    <string id="T4EnGCWxi" text="{FIRSTNAME} of Yamashiro" />
+    <string id="9EsngDKfZ" text="{FIRSTNAME} of Iga" />
+    <string id="j4OXKZvqL" text="{FIRSTNAME} of Kōga" />
+    <string id="guXk5HzCW" text="{FIRSTNAME} of Ōmi" />  
+    <string id="fjeL4ID0E" text="{FIRSTNAME} of Seta" />
+    <string id="BMC3EsLU7" text="{FIRSTNAME} of Sensū" />
+    <string id="A0gPkB4ts" text="{FIRSTNAME} of Settsu" />
+    
+    <string id="ju8Z0LVyt" text="{FIRSTNAME} the Oni Daemon" />
+    <string id="YtKpF7Nxb" text="{FIRSTNAME} the Aka-Oni" /> <!-- red oni -->
+    <string id="9ErrlniMG" text="{FIRSTNAME} the Ao-Oni" /> <!-- blue oni -->
+    <string id="dnGIsS6sT" text="{FIRSTNAME} the Buddha" />
+    <string id="RnCetm36o" text="{FIRSTNAME} the Akuemon" /> <!-- vicious samurai -->
+    <string id="tUmBaXD71" text="{FIRSTNAME} the Conspiracy Sage" />  
+    <string id="NAwc5nggv" text="{FIRSTNAME} the Conspiracy-God" />
+    <string id="sAXDvjt2q" text="{FIRSTNAME} the Cutting Board" />
+    <string id="uMd1rTgGf" text="{FIRSTNAME} the Kimgo Royal Guard" />
+    <string id="yq4dhf2Qf" text="{FIRSTNAME} the Weed" /> <!-- a slang for a ninja -->
+    <string id="T2SOCRqx8" text="{FIRSTNAME} of Bishū" />
+    <string id="ouK5J4nY2" text="{FIRSTNAME} of Banshū" />
+    <string id="7zGXWHeTU" text="{FIRSTNAME} of Tanshū" />
+    <string id="VT3hjkxas" text="{FIRSTNAME} of Sakushū" />
+    <string id="V1mRCgU1u" text="{FIRSTNAME} of Chōshū" />
+    <string id="ZWzgxwGBX" text="{FIRSTNAME} of Bōshū" />
+    <string id="UhxhE6MFY" text="{FIRSTNAME} of Geishū" />
+    
+    <string id="BKNAM3mrD" text="{FIRSTNAME} the Niō" />
+    <string id="mr3aw1IbV" text="{FIRSTNAME} the Adamantine Gate" />
+    <string id="PMJ7vEDiK" text="{FIRSTNAME} the Wild Tiger" />
+    <string id="oJvnHHdpJ" text="{FIRSTNAME} the Superior" /> <!-- dekibito -->
+    <string id="YKAGAkSnz" text="{FIRSTNAME} the Girly-Little-Prince" /> <!-- hime-wako, girly young boy -->
+    <string id="gIYetGfa0" text="{FIRSTNAME} the Demonic-Little-Prince" /> <!-- oni-wako, demonic young boy -->
+    <string id="kpwweVnrp" text="{FIRSTNAME} of Sanshū" />
+    <string id="EfxfEyW4j" text="{FIRSTNAME} of Kishū" />
+    <string id="rAWF633uy" text="{FIRSTNAME} of Tosa" />
+    <string id="G0XuUgBuQ" text="{FIRSTNAME} of Yoshū" />
+    
+    <string id="CJrlxhEMS" text="{FIRSTNAME} the Victorious" />
+    <string id="cZIlQ5S2b" text="{FIRSTNAME} the Raijin" />
+    <string id="4RxPfRua2" text="{FIRSTNAME} the Fūjin" />
+    <string id="E21APjpQO" text="{FIRSTNAME} the Avatar of Hachiman" />
+    <string id="BNEJURyqo" text="{FIRSTNAME} the Avatar of Marici" />
+    <string id="L26jG43nV" text="{FIRSTNAME} the West Conqueror" /> <!-- Chinzei -->
+    <string id="0ILFfZimT" text="{FIRSTNAME} the Bear" />
+    <string id="JXNphjBs8" text="{FIRSTNAME} of Hōshū" />
+    <string id="ymh4jzzTN" text="{FIRSTNAME} of Hishū" />
+    <string id="ymh4jzzTN" text="{FIRSTNAME} of Sasshū" />
+    <string id="1S0nXg0Gi" text="{FIRSTNAME} of Nisshū" />
+    <string id="r5OyNfvlY" text="{FIRSTNAME} of Gūshū" />
+    <string id="siiuRgFww" text="{FIRSTNAME} of Tsushima" />
+    <string id="QHHQvmI9f" text="{FIRSTNAME} the Tomma Idiot"/>
+    <!-- #endregion -->
+    <!-- #region settlement formats per culture  -->
+    <string id="75003f6b" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="13aeB4Ac" text="{FIRSTNAME} o {SETTLEMENT}" />
+    <string id="WqK5a41NY" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="iKAPdWL9l" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="BYIjrs4BJ" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="VQbbK5h51" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="SFydVVh4c" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="sTSxSXP2R" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="CHQdAHXoI" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="23xtkMt79" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="inlGGPfVY" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="Z46h6KpMp" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="4sL2RZ5FQ" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="ot7DlMb1D" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="n6YwceWUu" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="1Utfpjqr0" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="uJU5qJAWO" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="wUJuD9MbI" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="RhO1PXyPA" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="WGAXo1CEk" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="7QOaettwM" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="3CZNvz3Xu" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="tgZRiBn8Z" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="RXm1vEuqL" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="siYOgpoen" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="f6p4lxiWx" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="hMZlGFT4Y" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="EcLf4sX7o" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="mShxpDrua" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="kp0zKsQzH" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="A8i9y8MOA" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="3Lnxudiyr" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="9aF48664" text="{SETTLEMENT} no {FIRSTNAME}" />
+    <string id="Dt7SBz0we" text="{FIRSTNAME} of {SETTLEMENT}" />
+    <string id="QV9KFogP1" text="{FIRSTNAME} of {SETTLEMENT}" />
+    
+    <string id="mTO2J4fQU" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="ToHMmoKeg" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Zq3uiCC7q" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Y3dL6ToT8" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="Oqc4HTudC" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="RQUEx6f0i" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="ApTdjUGEQ" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="0MrWp8iWn" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <string id="RK0FNDFeB" text="{SETTLEMENT} no {FIRSTNAME}"/>
+    <!-- #endregion settlement formats per culture  -->
+    <string id="2aA12fc9" text="{FIRSTNAME}" />
+  </strings>
+</base>

@@ -1,5 +1,6 @@
 ﻿/*
  * Author: Thor Tronrud
+ * Updated for v1.3.9
  */
 
 using DistinguishedServiceRedux.settings;
@@ -9,7 +10,6 @@ using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
-using TaleWorlds.DotNet;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
@@ -24,33 +24,45 @@ namespace DistinguishedServiceRedux
             PromotionManager.__instance.nominations = new();
             PromotionManager.__instance.killcounts = new();
         }
+        
         private int SumKillCountByNonHero()
         {
             int totalKillCount = 0;
+            if (Mission.Current?.PlayerTeam?.ActiveAgents == null)
+                return 0;
+                
             foreach (Agent ag in Mission.Current.PlayerTeam.ActiveAgents)
             {
-                if (!ag.IsHero)
+                if (ag != null && !ag.IsHero)
                 {
                     totalKillCount += ag.KillCount;
                 }
             }
             return totalKillCount;
         }
+        
         private List<float> GetKillCounts()
         {
             List<float> kills = new();
+            if (Mission.Current?.PlayerTeam?.ActiveAgents == null)
+                return kills;
+                
             foreach (Agent ag in Mission.Current.PlayerTeam.ActiveAgents)
             {
-                if (!ag.IsHero)
+                if (ag != null && !ag.IsHero)
                 {
                     kills.Add((float)ag.KillCount);
                 }
             }
             return kills;
         }
+        
         private double GetPercentile(IEnumerable<float> seq, double percentile)
         {
             var elements = seq.ToArray();
+            if (elements.Length == 0)
+                return 0;
+                
             Array.Sort(elements);
             double realIndex = percentile * (elements.Length - 1);
             int index = (int)realIndex;
@@ -60,32 +72,45 @@ namespace DistinguishedServiceRedux
             else
                 return elements[index];
         }
-        /// <summary>
-        /// Overrides showbattleresults because it fires before any loading screen has had the chance to pop up
-        /// That has previously caused a horrible bug where options would appear *behind* the loading screen, causing infinite hang
-        /// </summary>
-        ///
+
         public override void ShowBattleResults()
         {
             if (PromotionManager.__instance == null)
                 return;
+                
             PromotionManager.__instance.nominations.Clear();
             PromotionManager.__instance.killcounts.Clear();
-            if (Mission.Current.Mode == MissionMode.Conversation || Mission.Current.Mode == MissionMode.StartUp)
+            
+            if (Mission.Current == null || Mission.Current.Mode == MissionMode.Conversation || Mission.Current.Mode == MissionMode.StartUp)
                 return;
-            if (Mission.Current.CombatType == Mission.MissionCombatType.ArenaCombat)// || !Mission.Current.IsFieldBattle)
+                
+            if (Mission.Current.CombatType == Mission.MissionCombatType.ArenaCombat)
                 return;
+                
             if (SumKillCountByNonHero() <= 0)
                 return;
+                
             float qKills = (float)GetPercentile(GetKillCounts(), Settings.Instance.EligiblePercentile);
+            
+            if (Mission.Current?.PlayerTeam?.ActiveAgents == null)
+                return;
+                
             foreach (Agent ag in Mission.Current.PlayerTeam.ActiveAgents)
             {
-                if (ag.IsHero || ag.Origin == null || (PartyBase)ag.Origin.BattleCombatant == null || ((PartyBase)ag.Origin.BattleCombatant).MobileParty == null || !((PartyBase)ag.Origin.BattleCombatant).MobileParty.IsMainParty)
+                if (ag == null || ag.IsHero || ag.Origin == null)
                     continue;
+                    
+                PartyBase originParty = ag.Origin.BattleCombatant as PartyBase;
+                if (originParty == null || originParty.MobileParty == null || !originParty.MobileParty.IsMainParty)
+                    continue;
+                    
                 CharacterObject co = CharacterObject.Find(ag.Character.StringId);
+                if (co == null)
+                    continue;
+                    
                 if (!PartyBase.MainParty.MemberRoster.Contains(co) || !MobileParty.MainParty.MemberRoster.Contains(co))
                     continue;
-                // FIXME: This can hit false positives in certain situations, but those edge cases are harder to fix and more rare, so we'll just settle for something that works for now...
+
                 int cutoffKills;
                 if (co.IsRanged && co.IsMounted)
                 {
@@ -103,6 +128,7 @@ namespace DistinguishedServiceRedux
                 {
                     cutoffKills = Settings.Instance.EligibleKillCountInfantry;
                 }
+                
                 bool qualified = (Settings.Instance.EligiblePercentile <= 0 || ag.KillCount > MathF.Ceiling(qKills));
                 if (qualified && ag.KillCount >= cutoffKills)
                 {
@@ -116,31 +142,42 @@ namespace DistinguishedServiceRedux
             PromotionManager.__instance.OnPCBattleEndedResults();
         }
     }
-    /// <summary>
-    /// Class to add behaviour to ongoing battle
-    /// </summary>
+
     internal class DSBattleBehavior : CampaignBehaviorBase
     {
         public DSBattleBehavior()
         {
         }
+        
         public override void RegisterEvents()
         {
             CampaignEvents.OnMissionStartedEvent.AddNonSerializedListener((object)this, new Action<IMission>(this.FindBattle));
             CampaignEvents.OnSessionLaunchedEvent.AddNonSerializedListener((object)this, new Action<CampaignGameStarter>(PromotionManager.AddDialogs));
         }
+        
         public override void SyncData(IDataStore dataStore)
         {
         }
-        public void FindBattle(IMission misson)
+        
+        public void FindBattle(IMission mission)
         {
-            if (((Mission)misson).CombatType > Mission.MissionCombatType.Combat || !((NativeObject)Mission.Current.Scene != null))
+            if (mission == null || Mission.Current == null)
                 return;
-            if (Mission.Current.HasMissionBehavior<DSBattleLogic>())
+                
+            Mission currentMission = Mission.Current;
+            
+            if (currentMission.CombatType > Mission.MissionCombatType.Combat)
+                return;
+                
+            if (currentMission.Scene == null)
+                return;
+                
+            if (currentMission.HasMissionBehavior<DSBattleLogic>())
             {
                 return;
             }
-            Mission.Current.AddMissionBehavior(new DSBattleLogic());
+            
+            currentMission.AddMissionBehavior(new DSBattleLogic());
         }
     }
 }

@@ -1,16 +1,21 @@
 ﻿<Module>
   <Name value="Distinguished Service - Redux"/>
   <Id value="DistinguishedServiceRedux"/>
-  <Version value="v1.6.2"/>
+  <Version value="v1.6.3"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
-    <DependedModule Id="Native" DependentVersion="1.2.12" Optional="false"/>
-    <DependedModule Id="SandBoxCore" DependentVersion="1.2.12" Optional="false"/>
-    <DependedModule Id="Sandbox" DependentVersion="1.2.12" Optional="false"/>
+    <DependedModule Id="Native" DependentVersion="e1.3.9.*"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="e1.3.9.*"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.3.9.*"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.3.9.*" Optional="true"/>
   </DependedModules>
   <DependedModuleMetadatas>
     <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" optional="true" version="5.*" />
+    <DependedModuleMetadata id="Bannerlord.ButterLib" order="LoadBeforeThis" version="*" />
+    <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="*" />
+    <DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" version="*" />
+    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="*" />
     <DependedModuleMetadata id="DistinguishedService" incompatible="true" />
     <DependedModuleMetadata id="DistinguishedService110" incompatible="true" />
     <DependedModuleMetadata id="DistinguishedService116" incompatible="true" />

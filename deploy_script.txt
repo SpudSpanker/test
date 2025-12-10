@@ -1,0 +1,113 @@
+@echo off
+echo ========================================
+echo Distinguished Service Redux - Deployment
+echo ========================================
+echo.
+
+REM Set your Bannerlord installation path - EDIT THIS IF NEEDED
+set GAME_DIR=C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord
+set MOD_NAME=DistinguishedServiceRedux
+
+REM Try to auto-detect game directory
+if not exist "%GAME_DIR%" (
+    echo Steam directory not found, trying Epic Games...
+    set GAME_DIR=C:\Program Files\Epic Games\Mount & Blade II Bannerlord
+)
+
+if not exist "%GAME_DIR%" (
+    echo Epic directory not found, trying GOG...
+    set GAME_DIR=C:\GOG Games\Mount & Blade II Bannerlord
+)
+
+REM Check if game directory exists
+if not exist "%GAME_DIR%" (
+    echo.
+    echo ========================================
+    echo ERROR: Game directory not found!
+    echo ========================================
+    echo Please edit this file and set the correct GAME_DIR path
+    echo Tried:
+    echo - C:\Program Files (x86)\Steam\steamapps\common\Mount ^& Blade II Bannerlord
+    echo - C:\Program Files\Epic Games\Mount ^& Blade II Bannerlord
+    echo - C:\GOG Games\Mount ^& Blade II Bannerlord
+    echo.
+    pause
+    exit /b 1
+)
+
+echo Game directory: %GAME_DIR%
+echo Module name: %MOD_NAME%
+echo.
+
+REM Create mod directory structure
+echo Creating mod directories...
+if not exist "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client" mkdir "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client"
+if not exist "%GAME_DIR%\Modules\%MOD_NAME%\ModuleData" mkdir "%GAME_DIR%\Modules\%MOD_NAME%\ModuleData"
+
+REM Copy DLL
+echo Copying DLL...
+set DLL_FOUND=0
+
+if exist "bin\x64\Release\net472\%MOD_NAME%.dll" (
+    copy /Y "bin\x64\Release\net472\%MOD_NAME%.dll" "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client\"
+    echo DLL copied from bin\x64\Release\net472\
+    set DLL_FOUND=1
+) else if exist "bin\Release\net472\%MOD_NAME%.dll" (
+    copy /Y "bin\Release\net472\%MOD_NAME%.dll" "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client\"
+    echo DLL copied from bin\Release\net472\
+    set DLL_FOUND=1
+) else if exist "bin\x64\Debug\net472\%MOD_NAME%.dll" (
+    copy /Y "bin\x64\Debug\net472\%MOD_NAME%.dll" "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client\"
+    echo DLL copied from bin\x64\Debug\net472\ (DEBUG BUILD!)
+    set DLL_FOUND=1
+) else if exist "bin\Debug\net472\%MOD_NAME%.dll" (
+    copy /Y "bin\Debug\net472\%MOD_NAME%.dll" "%GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client\"
+    echo DLL copied from bin\Debug\net472\ (DEBUG BUILD!)
+    set DLL_FOUND=1
+)
+
+if %DLL_FOUND%==0 (
+    echo.
+    echo ========================================
+    echo ERROR: DLL not found!
+    echo ========================================
+    echo The project needs to be built first.
+    echo.
+    echo Steps to fix:
+    echo 1. Open the solution in Visual Studio 2022
+    echo 2. Set Configuration to Release (or Debug)
+    echo 3. Set Platform to x64
+    echo 4. Build menu ^> Rebuild Solution
+    echo 5. Check for build errors
+    echo 6. Run this script again
+    echo.
+    echo Looked in:
+    echo - bin\x64\Release\net472\
+    echo - bin\Release\net472\
+    echo - bin\x64\Debug\net472\
+    echo - bin\Debug\net472\
+    echo.
+    pause
+    exit /b 1
+)
+
+REM Copy SubModule.xml
+echo Copying SubModule.xml...
+copy /Y "_Module\SubModule.xml" "%GAME_DIR%\Modules\%MOD_NAME%\"
+
+REM Copy ModuleData
+echo Copying ModuleData...
+xcopy /Y /E /I "_Module\ModuleData" "%GAME_DIR%\Modules\%MOD_NAME%\ModuleData"
+
+echo.
+echo ========================================
+echo Deployment complete!
+echo ========================================
+echo Mod location: %GAME_DIR%\Modules\%MOD_NAME%
+echo.
+echo Please verify the files are in the correct location:
+echo 1. SubModule.xml at: %GAME_DIR%\Modules\%MOD_NAME%\SubModule.xml
+echo 2. DLL at: %GAME_DIR%\Modules\%MOD_NAME%\bin\Win64_Shipping_Client\%MOD_NAME%.dll
+echo 3. Language files at: %GAME_DIR%\Modules\%MOD_NAME%\ModuleData\Languages\
+echo.
+pause

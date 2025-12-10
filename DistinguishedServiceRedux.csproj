@@ -6,49 +6,56 @@
 		<Platforms>x64</Platforms>
 		<LangVersion>10.0</LangVersion>
 		<Nullable>enable</Nullable>
+		<ModuleId>$(MSBuildProjectName)</ModuleId>
+		<ModuleName>$(MSBuildProjectName)</ModuleName>
+		<GameVersion>e1.3.9</GameVersion>
 	</PropertyGroup>
 
-  <PropertyGroup>
-      <ModuleId>$(MSBuildProjectName)</ModuleId>
-      <ModuleName>$(MSBuildProjectName)</ModuleName>
-      <GameVersion>e1.3.9</GameVersion>
-      <GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
-      <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release</Configurations>
-  </PropertyGroup>
-    <PropertyGroup>
-      <GameVersionFlat>$([System.String]::Copy('$(GameVersion)').Replace('.',''))</GameVersionFlat>
-      <GameVersionConstant>v$(GameVersionFlat)</GameVersionConstant>
-      <DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
-      <BaseOutputPath>bin\</BaseOutputPath>
-    </PropertyGroup>
-    <!-- NuGet Packages - Updated for v1.3.9 -->
-    <ItemGroup>
-        <PackageReference Include="Bannerlord.BuildResources" Version="1.2.1.90">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="e1.3.9.*">
-          <PrivateAssets>All</PrivateAssets>
-        </PackageReference>
-        <PackageReference Include="Bannerlord.ButterLib" Version="2.9.*" />
-        <PackageReference Include="Bannerlord.MCM" Version="5.10.*" />
-        <PackageReference Include="Bannerlord.UIExtenderEx" Version="2.12.*" />
-        <PackageReference Include="Lib.Harmony" Version="2.3.*" />
-        <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-    </ItemGroup>
+	<!-- Game Directory Configuration -->
+	<PropertyGroup>
+		<GameFolder Condition="$(GameFolder) == ''">$(BANNERLORD_GAME_DIR)</GameFolder>
+		<GameFolder Condition="$(GameFolder) == ''">C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
+	</PropertyGroup>
 
-      <!-- Extra Substitution Variables to Use in SubModule.xml -->
-    <ItemGroup>
-        <SubModuleOverrides Include="DisplayName">
-            <Regex>\$displayname\$</Regex>
-            <Replacement>$(DisplayName)</Replacement>
-        </SubModuleOverrides>
-        <SubModuleOverrides Include="MCMVersion">
-            <Regex>\$mcmversion\$</Regex>
-            <Replacement>$(MCMVersion)</Replacement>
-        </SubModuleOverrides>
-    </ItemGroup>
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="copy $(OutDir)\DistinguishedServiceRedux.dll DistinguishedServiceRedux\bin\Win64_Shipping_Client\DistinguishedServiceRedux.dll&#xD;&#xA;xcopy /Y /E _Module DistinguishedServiceRedux\" />
-    </Target>
+	<PropertyGroup>
+		<GameVersionFlat>$([System.String]::Copy('$(GameVersion)').Replace('.',''))</GameVersionFlat>
+		<GameVersionConstant>v$(GameVersionFlat)</GameVersionConstant>
+		<DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
+	</PropertyGroup>
+
+	<!-- NuGet Packages - Updated for v1.3.9 -->
+	<ItemGroup>
+		<PackageReference Include="Bannerlord.BuildResources" Version="1.2.1.90">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="e1.3.9.*">
+			<PrivateAssets>All</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Bannerlord.ButterLib" Version="2.9.*" IncludeAssets="compile" />
+		<PackageReference Include="Bannerlord.MCM" Version="5.10.*" IncludeAssets="compile" />
+		<PackageReference Include="Bannerlord.UIExtenderEx" Version="2.12.*" IncludeAssets="compile" />
+		<PackageReference Include="Lib.Harmony" Version="2.3.*" IncludeAssets="compile" />
+		<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+	</ItemGroup>
+
+	<!-- Copy to Modules folder after build -->
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<ItemGroup>
+			<ModuleFiles Include="$(TargetDir)**\*.*" />
+			<ModuleDataFiles Include="_Module\**\*.*" />
+		</ItemGroup>
+		
+		<!-- Create output directory structure -->
+		<MakeDir Directories="$(GameFolder)\Modules\$(ModuleName)\bin\Win64_Shipping_Client" />
+		<MakeDir Directories="$(GameFolder)\Modules\$(ModuleName)\ModuleData" />
+		
+		<!-- Copy DLL to correct location -->
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GameFolder)\Modules\$(ModuleName)\bin\Win64_Shipping_Client" />
+		
+		<!-- Copy Module files -->
+		<Copy SourceFiles="@(ModuleDataFiles)" DestinationFiles="@(ModuleDataFiles->'$(GameFolder)\Modules\$(ModuleName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+		
+		<Message Text="Mod deployed to: $(GameFolder)\Modules\$(ModuleName)" Importance="High" />
+	</Target>
 </Project>
